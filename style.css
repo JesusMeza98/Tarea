@@ -12,15 +12,16 @@ body{
 }
 
 header{
-        grid-area: header;
-        background-color: blue;
-        color: white;
-        font-family: Verdana, Geneva, sans-serif;
-        border-bottom: black solid;  
-       border-style: solid 5px;
-       text-align: center;
- 
-       
+    grid-area: header;
+    background-color: blue;
+    color: white;
+    font-family: Verdana, Geneva, sans-serif;
+    border-bottom: black solid;  
+   border-style: solid 5px;
+   text-align: center;   
+   grid-column: 1 / 4;
+   display: grid;
+   grid-template-columns: 6fr 1fr;
 }
 
 header img {
@@ -41,7 +42,13 @@ nav{
        border-top: solid;
        border-bottom: solid;
        padding: 10px;
+     
 }
+
+nav img{
+    width: 15px; height: 15px;
+}
+
 
 main{
     

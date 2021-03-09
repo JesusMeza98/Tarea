@@ -13,13 +13,13 @@
 
     <header>
         <h1>Sistema integrado de gestión</h1>
-        <p><img src="/Imagenes/usuario.png" alt="usuario" >Usuario 1</p>
+        <p><img src="Imagenes/usuario.png" alt="usuario" >Usuario 1</p>
                        
     </header>
 
     <nav>
         <form>
-        <label for="texto_buscar"> Busqueda en la web </label>
+        <label for="texto_buscar"> Buscar en la web </label>
         <input type="search" id="texto_buscar" >
         <button id="buscador">
             <img id="buscador" src="Imagenes/descarga.png" alt="descarga">
@@ -67,7 +67,7 @@
                 <input type="text" id="Abreviatura" maxlength="10" placeholder="Solo letras" pattern="[a-zA-Z\s]{2,50}" title="Deben ser letras" required></text>
                 <br>
                 <br>
-                Categoría*<select id="Categoria">
+                <label for="Categoria">Categoría*</label><select id="Categoria">
                 <option>Panes especiales</option>
                 <option>Lácteos</option>        
                 <option>Pasteles</option>
@@ -90,7 +90,7 @@
                 <input type="date" id="fecha" required>
                 <br>
                 <br>
-                Estado*
+                <label for="Estado" >Estado*</label>
                 <input type="radio" id="Activo" name="Estado"required>
                 <label for="Activo">Activo</label>
                 <input type="radio" id="Suspendido" name="Estado"required>
@@ -103,7 +103,8 @@
                 <input type="checkbox" id="Afecto a impuesto"name="Afecto a impuesto">
                 <br>
                 <br>
-                Foto <input accept="image/png,image/jpeg" id="file" type="file">
+                <label for="Foto" >Foto*</label>
+                 <input accept="image/png,image/jpeg" id="file" type="file">
                 <br>
                 <br>
                 <label for="Descripcion">Descripcion</label>
